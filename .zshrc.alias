@@ -1,0 +1,14 @@
+### ls
+case "${OSTYPE}" in
+# MacOSX
+darwin*)
+    alias ls="ls -G -w -F"
+    ;;
+# Linux
+linux*)
+    alias ls="ls --color -F"
+    ;;
+esac
+
+alias la="ls -la"
+alias ll="ls -l"

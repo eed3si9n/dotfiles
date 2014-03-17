@@ -1,0 +1,27 @@
+" https://github.com/Shougo/neobundle.vim
+
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+  call neobundle#rc(expand('~/.vim/bundle/'))
+endif
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" ....
+
+" https://github.com/Shougo/unite.vim
+" http://bling.github.io/blog/2013/06/02/unite-dot-vim-the-plugin-you-didnt-know-you-need/
+" Unite {{{{
+  " does a lot of things
+  NeoBundle 'Shougo/unite.vim'
+
+" }}}}
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck

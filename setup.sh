@@ -8,7 +8,7 @@
 
 dir=$HOME/dotfiles                    # dotfiles directory
 olddir=$HOME/dotfiles_old             # old dotfiles backup directory
-DOT_FILES=( .zshrc .zshrc.alias .zshrc.osx )
+DOT_FILES=( .zshrc .zshrc.alias .zshrc.osx .vimrc .vim)
 
 ##########
 
@@ -30,3 +30,7 @@ do
   echo "Creating symlink to $file in home directory."
   ln -s $dir/$file $HOME/$file
 done
+
+##########
+
+[ ! -d ~/.vim/bundle ] && mkdir -p ~/.vim/bundle && git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim && vim -c ':NeoBundleInstall'

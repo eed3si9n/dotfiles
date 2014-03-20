@@ -4,9 +4,11 @@
 ###############
 target
 boot
+staging
 lib_managed
 project/plugins/project
 local.sbt
+private-*.sbt
 
 # IDE and editors #
 ###################

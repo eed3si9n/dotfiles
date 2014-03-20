@@ -8,7 +8,7 @@
 
 dir=$HOME/dotfiles                    # dotfiles directory
 olddir=$HOME/dotfiles_old             # old dotfiles backup directory
-FILES=( zshrc vimrc vim gitignore_global )
+FILES=( zshrc vimrc vim gitignore_global sbt )
 
 ##########
 

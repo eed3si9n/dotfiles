@@ -1,0 +1,22 @@
+# see https://github.com/yuroyoro/dotfiles/blob/master/.gitconfig 
+# add this to ~/.gitconfig as
+# [include]
+#    path = dotfiles/gitconfig.alias
+
+[alias]
+	s   = status
+	# pull
+	up  = pull --rebase
+	# checkout
+ 	co  = checkout
+	cb  = checkout -branch 	# branch out
+	ct  = checkout --track	# track a remote branch
+	# branch
+	br  = branch
+	ba  = branch -a 		# list remote branches
+	# whatchanged
+	wc  = whatchanged		# include change files in the log
+	# reset
+	rsh  = reset --soft HEAD
+	rsh1 = reset --soft HEAD~
+	rsh2 = reset --soft HEAD~~

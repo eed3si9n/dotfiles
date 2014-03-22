@@ -9,8 +9,10 @@
 	up  = pull --rebase
 	# checkout
  	co  = checkout
-	cb  = checkout -branch 	# branch out
+	cb  = checkout -b 		# branch out
 	ct  = checkout --track	# track a remote branch
+	# commit
+	ae  = commit --allow-empty
 	# branch
 	br  = branch
 	ba  = branch -a 		# list remote branches
@@ -20,3 +22,5 @@
 	rsh  = reset --soft HEAD
 	rsh1 = reset --soft HEAD~
 	rsh2 = reset --soft HEAD~~
+	# cherry-pick
+	pk = cherry-pick

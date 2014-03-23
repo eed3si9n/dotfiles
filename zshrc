@@ -30,6 +30,9 @@ xterm)
 xterm*)
   export LSCOLORS=dxfxcxdxbxegedabagacad
   ;;
+*256color)
+  export LSCOLORS=dxfxcxdxbxegedabagacad
+  ;;
 dumb)
   ;;
 esac

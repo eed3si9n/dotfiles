@@ -8,7 +8,7 @@
 
 dir=$HOME/dotfiles                    # dotfiles directory
 olddir=$HOME/dotfiles_old             # old dotfiles backup directory
-FILES=( zshrc vimrc vim gitignore_global sbt )
+FILES=( zshrc vimrc vim gitignore_global sbt tmux.conf )
 
 ##########
 
@@ -34,3 +34,6 @@ done
 ##########
 
 [ ! -d ~/.vim/bundle ] && mkdir -p ~/.vim/bundle && git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim && vim -c ':NeoBundleInstall'
+
+## pip install git+git://github.com/Lokaltog/powerline on Mac
+## pip install --user git+git://github.com/Lokaltog/powerline elsewhere

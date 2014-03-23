@@ -11,5 +11,4 @@ $ sudo cp /System/Library/Fonts/xyz.ttf ~/fonts/
 $ ls
 xyz.ttf
 $ fontforge -script ~/work/powerline-fontpathcer/scripts/powerline-fontpatcher xyz.ttf
-
 ```

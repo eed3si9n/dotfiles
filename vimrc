@@ -4,6 +4,9 @@ source $HOME/dotfiles/vimrc.basic
 " extra
 source $HOME/dotfiles/vimrc.extra
 
+" indentation
+source $HOME/dotfiles/vimrc.indent
+
 " moving
 source $HOME/dotfiles/vimrc.moving
 

@@ -1,0 +1,10 @@
+" extra
+
+set showmatch     " hilight prens
+set number        " line numbers
+set list          " display whitespaces
+set listchars=tab:>.,trail:_,extends:>,precedes:< " the whitespace characters
+
+" remap ; as :
+noremap ; :
+

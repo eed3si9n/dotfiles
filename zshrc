@@ -5,6 +5,12 @@ compinit
 ## prompts
 PROMPT="[%m:%~]$ "
 
+## vi bindings
+bindkey -v
+bindkey -r "^L"
+bindkey '^R' history-incremental-search-backward
+bindkey '^A' clear-screen
+
 ## aliases
 #
 [ -f $HOME/dotfiles/zshrc.alias ] && source $HOME/dotfiles/zshrc.alias

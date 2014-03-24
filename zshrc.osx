@@ -2,3 +2,5 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
 
 export SITE_PACKAGES=/usr/local/lib/python2.7/site-packages/
+
+export JAVA_HOME=`/usr/libexec/java_home`

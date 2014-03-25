@@ -7,7 +7,7 @@ PROMPT="[%m:%~]$ "
 
 ## vi bindings
 bindkey -v
-bindkey -r "^L"
+# bindkey -r "^L"
 bindkey '^R' history-incremental-search-backward
 bindkey '^A' clear-screen
 

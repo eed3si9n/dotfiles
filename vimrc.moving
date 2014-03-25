@@ -1,7 +1,10 @@
 " moving
 
 " Use ctrl-[hjkl] to select the active split!
-noremap <silent> <C-k> :wincmd k<CR>
-noremap <silent> <C-j> :wincmd j<CR>
-noremap <silent> <C-h> :wincmd h<CR>
-noremap <silent> <C-l> :wincmd l<CR>
+noremap <silent> <M-Up> :wincmd k<CR>
+noremap <silent> <M-Down> :wincmd j<CR>
+noremap <silent> <M-Left> :wincmd h<CR>
+noremap <silent> <M-Right> :wincmd l<CR>
+noremap <silent> <Esc>B :wincmd h<CR>
+noremap <silent> <Esc>F :wincmd l<CR>
+

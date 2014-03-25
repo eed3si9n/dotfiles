@@ -1,10 +1,11 @@
 " moving
 
-" Use ctrl-[hjkl] to select the active split!
+" Use Meta-arrows to select the active split!
 noremap <silent> <M-Up> :wincmd k<CR>
 noremap <silent> <M-Down> :wincmd j<CR>
 noremap <silent> <M-Left> :wincmd h<CR>
 noremap <silent> <M-Right> :wincmd l<CR>
+" On Mac Option-arrows are mapped to these
 noremap <silent> <Esc>B :wincmd h<CR>
 noremap <silent> <Esc>F :wincmd l<CR>
 

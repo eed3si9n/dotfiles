@@ -7,4 +7,6 @@ set listchars=tab:>.,trail:_,extends:>,precedes:< " the whitespace characters
 
 " remap ; as :
 noremap ; :
+" remap jj as <Esc>
+imap jj <Esc>
 

@@ -9,7 +9,6 @@ PROMPT="[%m:%~]$ "
 bindkey -v
 # bindkey -r "^L"
 bindkey '^R' history-incremental-search-backward
-bindkey '^A' clear-screen
 
 ## aliases
 #

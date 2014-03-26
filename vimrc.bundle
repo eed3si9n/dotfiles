@@ -17,6 +17,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
   " does a lot of things
   NeoBundle 'Shougo/unite.vim'
 
+  NeoBundle 'Shougo/neomru.vim'
 " }}}}
 
 

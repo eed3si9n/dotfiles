@@ -1,6 +1,6 @@
 " colors
 
-colorscheme molokai
+colorscheme monokai
 
 let g:molokai_original = 1
 

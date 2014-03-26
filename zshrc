@@ -10,6 +10,9 @@ bindkey -v
 # bindkey -r "^L"
 bindkey '^R' history-incremental-search-backward
 
+# turn off xon and xoff for C-S and C-Q
+stty -ixon -ixoff
+
 ## aliases
 #
 [ -f $HOME/dotfiles/zshrc.alias ] && source $HOME/dotfiles/zshrc.alias

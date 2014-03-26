@@ -59,7 +59,7 @@ if s:bundled('vimfiler')
     nmap <buffer> N               <Plug>(vimfiler_new_file)
 
     " Open the file on <CR> or expand the directory.
-    nmap <buffer><CR>             vimfiler#smart_cursor_map("\<Plug>(vimfiler_expand_tree)", "\<Plug>(vimfiler_edit_file)")
+    nmap <buffer><expr><CR>       vimfiler#smart_cursor_map("\<Plug>(vimfiler_expand_tree)", "\<Plug>(vimfiler_edit_file)")
     " nmap <buffer> <Enter>       <Plug>(vimfiler_execute)
     nmap <buffer> l               <Plug>(vimfiler_smart_l)
     nmap <buffer> X               <Plug>(vimfiler_execute_system_associated)

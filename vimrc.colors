@@ -1,6 +1,8 @@
 " colors
 
-colorscheme Monokai-Refined
+colorscheme molokai
+
+let g:molokai_original = 1
 
 if &term =~ "xterm-256color" || "screen-256color"
   " 256 colors

@@ -27,11 +27,13 @@ endfunction
 if s:bundled('vimfiler')
 
   let g:vimfiler_as_default_explorer = 1
-  autocmd VimEnter * VimFiler -buffer-name=explorer -split -simple -winwidth=35 -no-quit
+  autocmd VimEnter * VimFiler -buffer-name=explorer -split -simple -winwidth=35 -no-quit -explorer -no-focus
   nnoremap <silent> <Leader>e :<C-U>VimFiler -buffer-name=explorer -split -simple -winwidth=35 -toggle -no-quit<CR>
   nnoremap <silent> <Leader>E :<C-U>VimFiler<CR>
 
   let g:vimfiler_no_default_key_mappings = 1
+  let g:vimfiler_force_overwrite_statusline = 0
+
   autocmd Filetype vimfiler call s:init_vimfiler()
   function! s:init_vimfiler() " {{{
     setlocal nonumber
@@ -55,7 +57,10 @@ if s:bundled('vimfiler')
     nmap <buffer> r               <Plug>(vimfiler_rename_file)
     nmap <buffer> K               <Plug>(vimfiler_make_directory)
     nmap <buffer> N               <Plug>(vimfiler_new_file)
-    nmap <buffer> <Enter>               <Plug>(vimfiler_execute)
+
+    " Open the file on <CR> or expand the directory.
+    nmap <buffer><CR>             vimfiler#smart_cursor_map("\<Plug>(vimfiler_expand_tree)", "\<Plug>(vimfiler_edit_file)")
+    " nmap <buffer> <Enter>       <Plug>(vimfiler_execute)
     nmap <buffer> l               <Plug>(vimfiler_smart_l)
     nmap <buffer> X               <Plug>(vimfiler_execute_system_associated)
     nmap <buffer> h               <Plug>(vimfiler_smart_h)
@@ -102,3 +107,4 @@ if s:bundled('vimfiler')
   endfunction " }}}
 endif
 " }}}
+

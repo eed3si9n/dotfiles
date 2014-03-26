@@ -22,3 +22,15 @@ endif
 
 nnoremap <silent> [unite]/ :<C-u>Unite -no-quit -buffer-name=search grep:.<cr>
 
+autocmd FileType unite call s:unite_settings()
+
+function! s:unite_settings()
+  let b:SuperTabDisabled=1
+  imap <buffer> <C-j>     <Plug>(unite_select_next_line)
+  imap <buffer> <C-k>     <Plug>(unite_select_previous_line)
+
+  " Double tapping <Esc> closes unite
+  nmap <silent> <buffer> <Esc><Esc> <Plug>(unite_exit)
+  imap <silent> <buffer> <Esc><Esc> <Plug>(unite_exit)
+endfunction
+

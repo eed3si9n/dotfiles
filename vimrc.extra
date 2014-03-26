@@ -4,9 +4,10 @@ set showmatch     " hilight prens
 set number        " line numbers
 set list          " display whitespaces
 set listchars=tab:>.,trail:_,extends:>,precedes:< " the whitespace characters
+set cursorline    " highlight the entire line 
 
 " remap ; as :
-noremap ; :
+nnoremap ; :
 " remap jj as <Esc>
 imap jj <Esc>
 

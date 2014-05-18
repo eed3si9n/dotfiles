@@ -10,6 +10,9 @@ source $HOME/dotfiles/vimrc.indent
 " moving
 source $HOME/dotfiles/vimrc.moving
 
+" searching
+source $HOME/dotfiles/vimrc.search
+
 " status line
 source $HOME/dotfiles/vimrc.statusline
 

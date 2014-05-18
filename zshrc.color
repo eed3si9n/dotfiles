@@ -1,0 +1,17 @@
+## color
+unset LSCOLORS
+
+case "${TERM}" in
+xterm)
+  export LSCOLORS=dxfxcxdxbxegedabagacad
+  ;;
+xterm*)
+  export LSCOLORS=dxfxcxdxbxegedabagacad
+  ;;
+*256color)
+  export LSCOLORS=dxfxcxdxbxegedabagacad
+  ;;
+dumb)
+  ;;
+esac
+

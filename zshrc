@@ -1,17 +1,5 @@
-## auto comp
-autoload -U compinit
-compinit
-
-## prompts
-PROMPT="[%m:%~]$ "
-
-## vi bindings
-bindkey -v
-# bindkey -r "^L"
-bindkey '^R' history-incremental-search-backward
-
-# turn off xon and xoff for C-S and C-Q
-stty -ixon -ixoff
+## basic
+[ -f $HOME/dotfiles/zshrc.basic ] && source $HOME/dotfiles/zshrc.basic
 
 ## aliases
 #
@@ -29,18 +17,5 @@ linux*)
 esac
 
 ## color
-unset LSCOLORS
+[ -f $HOME/dotfiles/zshrc.color ] && source $HOME/dotfiles/zshrc.color
 
-case "${TERM}" in
-xterm)
-  export LSCOLORS=dxfxcxdxbxegedabagacad
-  ;;
-xterm*)
-  export LSCOLORS=dxfxcxdxbxegedabagacad
-  ;;
-*256color)
-  export LSCOLORS=dxfxcxdxbxegedabagacad
-  ;;
-dumb)
-  ;;
-esac

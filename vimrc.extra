@@ -13,3 +13,8 @@ noremap <silent> <C-S>      :update<CR>
 vnoremap <silent> <C-S>     <C-C>:update<CR>
 inoremap <silent> <C-S>     <C-O>:update<CR>
 
+" split to the right
+set splitright 
+" split to the bottom
+set splitbelow
+

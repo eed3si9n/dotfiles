@@ -2,6 +2,9 @@
 autoload -U compinit
 compinit
 
+## auto load zmv for massive renaming
+autoload -U zmv
+
 ## prompts
 PROMPT="[%m:%~]$ "
 
@@ -25,4 +28,3 @@ bindkey '^f' history-beginning-search-forward-end
 
 # turn off xon and xoff for C-S and C-Q
 stty -ixon -ixoff
-

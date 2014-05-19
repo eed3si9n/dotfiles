@@ -43,9 +43,18 @@ if neobundle#is_installed('neocomplete')
 endif
 " }}}
 
+" vimshell {{{
+if neobundle#is_installed('vimshell')
+  nnoremap <silent> <Leader>s :<C-U>VimShell -buffer-name=shell -split -toggle<CR>
+  let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
+endif
+" }}}
+
+
 " vim.filer {{{
 if neobundle#is_installed('vimfiler')
-
+  " Enable file operation commands.
+  let g:vimfiler_safe_mode_by_default = 0
   let g:vimfiler_as_default_explorer = 1
   autocmd VimEnter * VimFiler -buffer-name=explorer -split -simple -winwidth=35 -no-quit -explorer -no-focus
   nnoremap <silent> <Leader>e :<C-U>VimFiler -buffer-name=explorer -split -simple -winwidth=35 -toggle -no-quit<CR>

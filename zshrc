@@ -19,3 +19,5 @@ esac
 ## color
 [ -f $HOME/dotfiles/zshrc.color ] && source $HOME/dotfiles/zshrc.color
 
+## local
+[ -f $HOME/dotfiles/zshrc.local ] && source $HOME/dotfiles/zshrc.local

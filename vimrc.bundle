@@ -36,6 +36,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
   NeoBundle 'Shougo/vimfiler'
 
   NeoBundle 'Shougo/neocomplete'
+  
+  " NeoBundle 'Valloric/YouCompleteMe'
 " }}}
 
 " Syntax {{{

@@ -18,8 +18,13 @@ NeoBundleFetch 'Shougo/neobundle.vim'
   NeoBundle 'Shougo/unite.vim'
 
   NeoBundle 'Shougo/neomru.vim'
+
+  NeoBundle 'tsukkee/unite-help' 
 " }}}}
 
+" Editting {{{
+  NeoBundle 'kana/vim-smartinput'
+" }}}
 
 " Utility {{{
   NeoBundle 'Shougo/vimshell.git'

@@ -46,12 +46,12 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " }}}
 
-" ColorSchema{{{{
+" Color Scheme {{{
   " color schema 256
   " NeoBundle 'tomasr/molokai'
   " NeoBundle 'jaromero/vim-monokai-refined'
   NeoBundle 'sickill/vim-monokai'
-  " }}}
+" }}}
 
 " Required:
 filetype plugin indent on

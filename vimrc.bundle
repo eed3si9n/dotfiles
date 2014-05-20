@@ -43,6 +43,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
   NeoBundle 'Shougo/neocomplete'
   
   " NeoBundle 'Valloric/YouCompleteMe'
+
+  NeoBundle 'Shougo/neosnippet.vim'
+  NeoBundle 'Shougo/neosnippet-snippets'
 " }}}
 
 " Syntax {{{

@@ -43,6 +43,15 @@ if neobundle#is_installed('neocomplete')
 endif
 " }}}
 
+" neosnippet {{{
+if neobundle#is_installed('neosnippet.vim')
+  " Plugin key-mappings.
+  imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  xmap <C-k>     <Plug>(neosnippet_expand_target)
+endif
+" }}}
+
 " vimshell {{{
 if neobundle#is_installed('vimshell')
   nnoremap <silent> <Leader>s :<C-U>VimShell -buffer-name=shell -split -toggle<CR>

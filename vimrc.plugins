@@ -65,7 +65,7 @@ if neobundle#is_installed('vimfiler')
   " Enable file operation commands.
   let g:vimfiler_safe_mode_by_default = 0
   let g:vimfiler_as_default_explorer = 1
-  autocmd VimEnter * VimFiler -buffer-name=explorer -split -simple -winwidth=35 -no-quit -explorer -no-focus
+  " autocmd VimEnter * VimFiler -buffer-name=explorer -split -simple -winwidth=35 -no-quit -explorer -no-focus
   nnoremap <silent> <Leader>e :<C-U>VimFiler -buffer-name=explorer -split -simple -winwidth=35 -toggle -no-quit<CR>
   nnoremap <silent> <Leader>E :<C-U>VimFiler<CR>
 
@@ -125,6 +125,7 @@ if neobundle#is_installed('vimfiler')
     " nmap <buffer> <C-g>         <Plug>(vimfiler_print_filename)
     " nmap <buffer> g<C-g>        <Plug>(vimfiler_toggle_maximize_window)
     nmap <buffer> yy              <Plug>(vimfiler_yank_full_path)
+    nmap <buffer> M               :<Plug>(vimfiler_set_current_mask)
     nmap <buffer> gm              <Plug>(vimfiler_set_current_mask)
     nmap <buffer> gr              <Plug>(vimfiler_grep)
     nmap <buffer> gf              <Plug>(vimfiler_find)

@@ -9,6 +9,7 @@ lib_managed
 project/plugins/project
 local.sbt
 private-*.sbt
+.history
 
 # IDE and editors #
 ###################

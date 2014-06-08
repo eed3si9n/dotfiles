@@ -1,6 +1,9 @@
 ## basic
 [ -f $HOME/dotfiles/zshrc.basic ] && source $HOME/dotfiles/zshrc.basic
 
+## app configurations
+[ -f $HOME/dotfiles/zshrc.appconfig ] && source $HOME/dotfiles/zshrc.appconfig
+
 ## aliases
 #
 [ -f $HOME/dotfiles/zshrc.alias ] && source $HOME/dotfiles/zshrc.alias

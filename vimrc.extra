@@ -18,3 +18,6 @@ set splitright
 " split to the bottom
 set splitbelow
 
+" display $ at the end of change
+set cpoptions+=$
+

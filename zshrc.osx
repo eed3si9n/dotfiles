@@ -3,6 +3,24 @@ export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 
 export SITE_PACKAGES=/usr/local/lib/python2.7/site-packages/
 
+## Java
+
+# `/usr/libexec/java_home -V` prints out the list of available JDKs
+# setjdk 1.7
+function setjdk() {
+  if [ $# -ne 0 ]; then
+    removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
+    if [ -n "${JAVA_HOME+x}" ]; then
+      removeFromPath $JAVA_HOME/bin
+    fi
+    export JAVA_HOME=`/usr/libexec/java_home -v $@`
+    export PATH=$JAVA_HOME/bin:$PATH
+  fi
+}
+function removeFromPath() {
+  export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
+}
+
 export JAVA_HOME=`/usr/libexec/java_home`
 
 ## ruby

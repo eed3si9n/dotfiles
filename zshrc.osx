@@ -22,6 +22,8 @@ function removeFromPath() {
 }
 
 export JAVA_HOME=`/usr/libexec/java_home`
+export AXIS2_HOME="$HOME/App/axis2-1.6.2"
+export PATH=$AXIS2_HOME/bin$PATH
 
 ## ruby
 # https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x

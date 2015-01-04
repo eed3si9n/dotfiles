@@ -24,6 +24,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Editting {{{
   NeoBundle 'kana/vim-smartinput'
+  NeoBundle 'tyru/caw.vim'
 " }}}
 
 " Utility {{{

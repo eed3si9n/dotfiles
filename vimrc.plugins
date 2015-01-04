@@ -7,6 +7,12 @@ if neobundle#is_installed('caw.vim')
 endif
 " }}}
 
+" vim-bookmarks {{{
+if neobundle#is_installed('vim-bookmarks')
+  let g:bookmark_save_per_working_dir = 1
+endif
+" }}}
+
 " neocomplete {{{
 if neobundle#is_installed('neocomplete')
   let g:acp_enableAtStartup = 0

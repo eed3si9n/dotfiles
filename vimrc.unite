@@ -47,6 +47,9 @@ nnoremap <silent> [unite]b :<C-u>Unite -no-split -buffer-name=bookmark bookmark:
 " Add bookmark using <space>x
 nnoremap <silent> [unite]x :<C-u>UniteBookmarkAdd<cr>
 
+" Vim-bookmarks using <space>m
+nnoremap <silent> [unite]m :<C-u>Unite -no-split -buffer-name=bookmark vim_bookmarks:<cr>
+
 " Everything using <space>a
 nnoremap <silent> [unite]a :<C-u>Unite -no-split -buffer-name=files buffer file_mru bookmark file:<cr>
 

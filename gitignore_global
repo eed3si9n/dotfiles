@@ -17,6 +17,7 @@ private-*.sbt
 .idea
 *.iws
 *.sublime-*
+.vim-*
 
 # OS generated files #
 ######################

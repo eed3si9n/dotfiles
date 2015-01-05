@@ -2,14 +2,16 @@
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
 endif
+
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" ....
+call neobundle#end()
 
 " https://github.com/Shougo/unite.vim
 " http://bling.github.io/blog/2013/06/02/unite-dot-vim-the-plugin-you-didnt-know-you-need/
@@ -19,11 +21,12 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
   NeoBundle 'Shougo/neomru.vim'
 
-  NeoBundle 'tsukkee/unite-help' 
+  NeoBundle 'tsukkee/unite-help'
 " }}}}
 
 " Editting {{{
   NeoBundle 'kana/vim-smartinput'
+  NeoBundle 'tyru/caw.vim'
 " }}}
 
 " Utility {{{
@@ -46,6 +49,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
   NeoBundle 'Shougo/neosnippet.vim'
   NeoBundle 'Shougo/neosnippet-snippets'
+
+  NeoBundle 'MattesGroeger/vim-bookmarks'
 " }}}
 
 " Syntax {{{

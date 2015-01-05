@@ -1,0 +1,3 @@
+export SITE_PACKAGES=$HOME/.local/lib/python2.7/site-packages/
+export PATH=~/bin:$PATH
+

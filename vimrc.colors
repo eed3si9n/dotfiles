@@ -21,3 +21,6 @@ endif
 
 syntax on
 
+hi Normal ctermbg=none
+hi NonText ctermbg=none
+

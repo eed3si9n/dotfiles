@@ -4,6 +4,8 @@ unset LSCOLORS
 case "${TERM}" in
 xterm)
   export LSCOLORS=dxfxcxdxbxegedabagacad
+  # This is required to force tmux to 256 color mode
+  export TERM=screen-256color
   ;;
 xterm*)
   export LSCOLORS=dxfxcxdxbxegedabagacad

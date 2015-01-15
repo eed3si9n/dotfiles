@@ -43,6 +43,7 @@ Debian_menu["Debian_Applications_Programming"] = {
 	{"GDB", "x-terminal-emulator -e ".."/usr/bin/gdb"},
 	{"Python (v2.7)", "x-terminal-emulator -e ".."/usr/bin/python2.7","/usr/share/pixmaps/python2.7.xpm"},
 	{"Python (v3.4)", "x-terminal-emulator -e ".."/usr/bin/python3.4","/usr/share/pixmaps/python3.4.xpm"},
+	{"Ruby (irb1.9.1)", "x-terminal-emulator -e ".."/usr/bin/irb1.9.1"},
 	{"Tclsh8.6", "x-terminal-emulator -e ".."/usr/bin/tclsh8.6"},
 	{"TkWish8.6","x-terminal-emulator -e /usr/bin/wish8.6"},
 }
@@ -68,6 +69,7 @@ Debian_menu["Debian_Applications_System_Administration"] = {
 	{"DSL/PPPoE configuration tool", "x-terminal-emulator -e ".."/usr/sbin/pppoeconf","/usr/share/pixmaps/pppoeconf.xpm"},
 	{"Editres","editres"},
 	{"pppconfig", "x-terminal-emulator -e ".."su-to-root -p root -c /usr/sbin/pppconfig"},
+	{"TeXconfig", "x-terminal-emulator -e ".."/usr/bin/texconfig"},
 	{"Xclipboard","xclipboard"},
 	{"Xfontsel","xfontsel"},
 	{"Xkill","xkill"},
@@ -113,6 +115,7 @@ Debian_menu["Debian_Applications_Viewers"] = {
 	{"Eye of GNOME","/usr/bin/eog","/usr/share/pixmaps/gnome-eog.xpm"},
 	{"Shotwell","/usr/bin/shotwell"},
 	{"Xditview","xditview"},
+	{"XDvi","/usr/bin/xdvi"},
 }
 Debian_menu["Debian_Applications"] = {
 	{ "Accessibility", Debian_menu["Debian_Applications_Accessibility"] },
@@ -147,11 +150,30 @@ Debian_menu["Debian_Games"] = {
 }
 Debian_menu["Debian_Help"] = {
 	{"Info", "x-terminal-emulator -e ".."info"},
+	{"TeXdoctk","/usr/bin/texdoctk"},
 	{"Xman","xman"},
 	{"yelp","/usr/bin/yelp"},
+}
+Debian_menu["Debian_Screen_Locking"] = {
+	{"Lock Screen (XScreenSaver)","/usr/bin/xscreensaver-command -lock"},
+}
+Debian_menu["Debian_Screen_Saving"] = {
+	{"Activate ScreenSaver (Next)","/usr/bin/xscreensaver-command -next"},
+	{"Activate ScreenSaver (Previous)","/usr/bin/xscreensaver-command -prev"},
+	{"Activate ScreenSaver (Random)","/usr/bin/xscreensaver-command -activate"},
+	{"Demo Screen Hacks","/usr/bin/xscreensaver-command -demo"},
+	{"Disable XScreenSaver","/usr/bin/xscreensaver-command -exit"},
+	{"Enable XScreenSaver","/usr/bin/xscreensaver"},
+	{"Reinitialize XScreenSaver","/usr/bin/xscreensaver-command -restart"},
+	{"ScreenSaver Preferences","/usr/bin/xscreensaver-command -prefs"},
+}
+Debian_menu["Debian_Screen"] = {
+	{ "Locking", Debian_menu["Debian_Screen_Locking"] },
+	{ "Saving", Debian_menu["Debian_Screen_Saving"] },
 }
 Debian_menu["Debian"] = {
 	{ "Applications", Debian_menu["Debian_Applications"] },
 	{ "Games", Debian_menu["Debian_Games"] },
 	{ "Help", Debian_menu["Debian_Help"] },
+	{ "Screen", Debian_menu["Debian_Screen"] },
 }

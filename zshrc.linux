@@ -1,3 +1,14 @@
 export SITE_PACKAGES=$HOME/.local/lib/python2.7/site-packages/
 export PATH=~/bin:$PATH
 
+## Ruby
+## list all available versions
+## $ rbenv install -l
+## install a Ruby version
+## $ rbenv install 2.0.0-p247
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+## keyboard
+# setxkbmap -option ctrl:swapcaps,altwin:swap_alt_win -model microsoft4000
+

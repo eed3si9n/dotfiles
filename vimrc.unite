@@ -56,6 +56,9 @@ nnoremap <silent> [unite]a :<C-u>Unite -no-split -buffer-name=files buffer file_
 " Help using <space>h
 nnoremap <silent> [unite]h :<C-u>Unite -no-split -buffer-name=help help:<cr>
 
+" Color schrme using <space>c
+nnoremap <silent> [unite]c :<C-u>Unite -buffer-name=color -auto-preview colorscheme:<cr>
+
 autocmd FileType unite call s:unite_settings()
 
 function! s:unite_settings()

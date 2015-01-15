@@ -21,6 +21,8 @@ endif
 
 syntax on
 
-hi Normal ctermbg=none
-hi NonText ctermbg=none
+if g:colors_name == "monokai"
+  hi Normal ctermbg=none
+  hi NonText ctermbg=none
+endif
 

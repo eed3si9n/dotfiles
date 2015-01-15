@@ -22,6 +22,7 @@ call neobundle#end()
   NeoBundle 'Shougo/neomru.vim'
 
   NeoBundle 'tsukkee/unite-help'
+  NeoBundle 'ujihisa/unite-colorscheme'
 " }}}}
 
 " Editting {{{
@@ -64,6 +65,7 @@ call neobundle#end()
   " NeoBundle 'tomasr/molokai'
   " NeoBundle 'jaromero/vim-monokai-refined'
   NeoBundle 'sickill/vim-monokai'
+  NeoBundle 'endel/vim-github-colorscheme'
 " }}}
 
 " Required:

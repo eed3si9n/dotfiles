@@ -18,6 +18,7 @@ private-*.sbt
 *.iws
 *.sublime-*
 .vim-*
+Session.vim
 
 # OS generated files #
 ######################

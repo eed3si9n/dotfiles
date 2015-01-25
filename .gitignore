@@ -3,4 +3,5 @@ sbt/gpg
 zshrc.local
 sbt/ghpages
 sbt/*/dependency/
+sbt/launchers/
 

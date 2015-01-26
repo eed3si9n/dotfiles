@@ -28,7 +28,7 @@ if neobundle#is_installed('unite-session')
     call s:deleteMatchingBuffers('v-')
   endfunction
 
-  let s:currentDirectory = fnamemodify(getcwd(), ':t')
+  let s:currentDirectory = fnamemodify(getcwd(), ':t') . fnamemodify(getcwd(), ':p:h:gs?/?_?') 
   function! SaveSess()
     call DeleteBuiltInBuffers()
     exec 'UniteSessionSave ' . s:currentDirectory

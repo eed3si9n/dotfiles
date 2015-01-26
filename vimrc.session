@@ -1,0 +1,46 @@
+" unite-session {{{
+if neobundle#is_installed('unite-session')
+  let g:unite_source_session_options = 'blank,buffers,curdir,folds,help,tabpages,winsize' " options
+  
+  function! s:getBufferList()
+    return filter(range(1,bufnr('$')), 'buflisted(v:val)')
+  endfunction
+
+  function! s:getMatchingBuffers(pattern)
+    return filter(s:getBufferList(), 'bufname(v:val) =~ a:pattern')
+  endfunction
+
+  function! s:deleteModifiable(buf)
+    exec 'b ' . a:buf
+    exec 'set modifiable'
+    exec 'bd ' . a:buf
+  endfunction
+
+  function! s:deleteMatchingBuffers(pattern)
+    let l:matchList = s:getMatchingBuffers(a:pattern)
+    for i in l:matchList
+      call s:deleteModifiable(i)
+    endfor
+  endfunction
+
+  " Delete any buffer that contains v- in its name.
+  function! DeleteBuiltInBuffers()
+    call s:deleteMatchingBuffers('v-')
+  endfunction
+
+  let s:currentDirectory = fnamemodify(getcwd(), ':t')
+  function! SaveSess()
+    call DeleteBuiltInBuffers()
+    exec 'UniteSessionSave ' . s:currentDirectory
+  endfunction
+
+  function! RestoreSess()
+    exec 'UniteSessionLoad ' . s:currentDirectory
+    syntax on
+  endfunction
+
+  autocmd VimLeave * call SaveSess()
+  autocmd VimEnter * call RestoreSess()
+endif
+" }}}
+

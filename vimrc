@@ -25,6 +25,9 @@ source $HOME/dotfiles/vimrc.plugins
 " unite
 source $HOME/dotfiles/vimrc.unite
 
+" session
+source $HOME/dotfiles/vimrc.session
+
 " colors
 source $HOME/dotfiles/vimrc.colors
 

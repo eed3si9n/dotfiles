@@ -4,4 +4,6 @@ zshrc.local
 sbt/ghpages
 sbt/*/dependency/
 sbt/launchers/
+sbt/cache/
+sbt/repositories
 

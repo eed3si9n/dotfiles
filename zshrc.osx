@@ -5,6 +5,10 @@ export SITE_PACKAGES=/usr/local/lib/python2.7/site-packages/
 
 ## Java
 
+export JAVA_1_6_HOME=`/usr/libexec/java_home -v 1.6`
+export JAVA_1_7_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_1_8_HOME=`/usr/libexec/java_home -v 1.8`
+
 # `/usr/libexec/java_home -V` prints out the list of available JDKs
 # setjdk 1.7
 function setjdk() {

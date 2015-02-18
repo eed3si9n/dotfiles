@@ -12,3 +12,8 @@ eval "$(rbenv init -)"
 ## keyboard
 # setxkbmap -option ctrl:swapcaps,altwin:swap_alt_win -model microsoft4000
 
+## java
+export JAVA_1_6_HOME="/usr/lib/jvm/java-1.6.0-openjdk-amd64"
+export JAVA_1_7_HOME="/usr/lib/jvm/java-1.7.0-openjdk-amd64"
+export JAVA_1_8_HOME="/usr/lib/jvm/java-8-oracle"
+

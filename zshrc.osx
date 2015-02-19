@@ -25,7 +25,11 @@ function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
 
-export JAVA_HOME=`/usr/libexec/java_home`
+if [ -z "$JDK_SET" ]; then
+  export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+  export PATH=$JAVA_HOME/bin:$PATH
+fi
+
 export AXIS2_HOME="$HOME/App/axis2-1.6.2"
 export PATH=$AXIS2_HOME/bin$PATH
 

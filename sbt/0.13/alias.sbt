@@ -1,0 +1,1 @@
+addCommandAlias("c", "compile")

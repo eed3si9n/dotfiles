@@ -1,3 +1,5 @@
 ## app configurations
 
 export CONSCRIPT_OPTS="-XX:MaxPermSize=512M -Dfile.encoding=UTF-8"
+
+export JAVA_OPTS="-Dfile.encoding=UTF-8"

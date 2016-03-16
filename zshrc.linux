@@ -1,5 +1,5 @@
 export SITE_PACKAGES=$HOME/.local/lib/python2.7/site-packages/
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/dotfiles/bin:$PATH
 
 ## Ruby
 ## list all available versions

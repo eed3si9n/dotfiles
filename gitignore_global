@@ -14,8 +14,12 @@ private-*.sbt
 
 # IDE and editors #
 ###################
-*.iml
-.idea
+
+# *.iml
+# .idea
+.idea/workspace.xml
+.idea/tasks.xml
+
 *.iws
 *.sublime-*
 .vim-*

@@ -1,6 +1,7 @@
 ## app configurations
 
 export CONSCRIPT_HOME="$HOME/.conscript"
+# export CONSCRIPT_HOME="$HOME/alternative_conscript"
 
 export CONSCRIPT_OPTS="-XX:MaxPermSize=512M -Dfile.encoding=UTF-8"
 

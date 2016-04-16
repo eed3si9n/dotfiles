@@ -1,5 +1,6 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=/opt/local/bin:/opt/local/sbin:$CONSCRIPT_HOME/bin:~/bin:~/dotfiles/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:~/bin:~/dotfiles/bin:$PATH
+export PATH=$CONSCRIPT_HOME/bin:$PATH
 
 export SITE_PACKAGES=/usr/local/lib/python2.7/site-packages/
 

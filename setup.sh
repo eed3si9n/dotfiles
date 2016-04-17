@@ -8,7 +8,7 @@
 
 dir=$HOME/dotfiles                    # dotfiles directory
 olddir=$HOME/dotfiles_old             # old dotfiles backup directory
-FILES=( zshrc vimrc vim gitignore_global sbt tmux.conf )
+FILES=( zshrc vimrc vim gitignore_global tmux.conf )
 
 ##########
 
@@ -30,6 +30,11 @@ do
   echo "Creating symlink to $file in home directory."
   ln -s $dir/$file $HOME/.$file
 done
+
+# sbt 0.13 directory
+
+mkdir -p "$HOME/.sbt"
+ln -s $dir/sbt/0.13/ $HOME/.sbt/0.13/
 
 ##########
 

@@ -27,7 +27,7 @@ function removeFromPath() {
 }
 
 if [ -z "$JDK_SET" ]; then
-  export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+  export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
   export PATH=$JAVA_HOME/bin:$PATH
 fi
 

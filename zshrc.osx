@@ -6,6 +6,12 @@ export SITE_PACKAGES=/usr/local/lib/python2.7/site-packages/
 
 ## Java
 
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# jenv add `/usr/libexec/java_home -v 1.6`
+# jenv add `/usr/libexec/java_home -v 1.7`
+
 export JAVA_1_6_HOME=`/usr/libexec/java_home -v 1.6`
 export JAVA_1_7_HOME=`/usr/libexec/java_home -v 1.7`
 export JAVA_1_8_HOME=`/usr/libexec/java_home -v 1.8`
@@ -37,3 +43,4 @@ export PATH=$AXIS2_HOME/bin$PATH
 ## ruby
 # https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
 [ `brew list -1 | grep "^rbenv\$"` ] && eval "$(rbenv init -)"
+

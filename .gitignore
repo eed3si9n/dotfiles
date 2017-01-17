@@ -6,4 +6,4 @@ sbt/*/dependency/
 sbt/launchers/
 sbt/cache/
 sbt/repositories
-
+sbt/0.13/templates

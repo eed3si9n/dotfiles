@@ -1,0 +1,68 @@
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+on_event = 'Denite'
+hook_add = '''
+    nmap <space> [denite]
+    nnoremap [denite] <nop>
+
+    " File searching using <space>f
+    nnoremap <silent> [denite]f :<C-u>Denite -buffer-name=files -auto-preview file_rec<cr>
+
+    " Grepping using <space>/
+    nnoremap <silent> [denite]/ :<C-u>Denite -buffer-name=search grep:.<cr>
+
+    " Buffer switching using <space>s
+    nnoremap <silent> [denite]s :<C-u>Denite -buffer-name=buffers -auto-preview buffer:<cr>
+
+    " Buffer and recent using <space>r
+    nnoremap <silent> [denite]r :<C-u>Denite -buffer-name=mru buffer file_mru:<cr>
+
+    " Help using <space>h
+    nnoremap <silent> [denite]h :<C-u>Denite -buffer-name=help help:<cr>
+
+    " Color scheme using <space>c
+    nnoremap <silent> [denite]c :<C-u>Denite -buffer-name=color -auto-preview colorscheme:<cr>
+
+'''
+
+hook_post_source = '''
+    " grep
+    if executable('rg')
+        call denite#custom#var('file_rec', 'command',
+        \ ['rg', '--files', '--glob', '!.git'])
+
+        call denite#custom#var('grep', 'command', ['rg'])
+        call denite#custom#var('grep', 'default_opts', [])
+        call denite#custom#var('grep', 'recursive_opts', [])
+        call denite#custom#var('grep', 'separator', ['--'])
+        call denite#custom#var('grep', 'default_opts', ['--no-heading', '--color=never', '--vimgrep'])
+    endif
+
+    call denite#custom#source('file_mru', 'matchers', ['matcher_fuzzy', 'matcher_project_files'])
+    call denite#custom#source('file_mru', 'converters', ['converter_relative_word'])
+
+    " Change mappings.
+    " Use arrows to move up and down the denite list.
+    call denite#custom#map(
+         \ 'insert',
+         \ '<Down>',
+         \ '<denite:move_to_next_line>',
+         \ 'noremap'
+         \)
+    call denite#custom#map(
+         \ 'insert',
+         \ '<Up>',
+         \ '<denite:move_to_previous_line>',
+         \ 'noremap'
+         \)
+'''
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+depends = 'denite.nvim'
+on_path = '.*'
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+depends = 'denite.nvim'
+on_event = 'TextYankPost'

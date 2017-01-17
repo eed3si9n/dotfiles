@@ -1,7 +1,7 @@
 " basic setups
 
 set nocompatible
-set hidden			" allow editing multiple files
+set hidden      " allow editing multiple files
 set nobackup
 set autoread
 set noswapfile
@@ -17,4 +17,3 @@ filetype plugin on
 
 " *.md is markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-

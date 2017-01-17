@@ -1,8 +1,8 @@
-" colors
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme='powerlineish'
 
 colorscheme monokai
-
-let g:molokai_original = 1
 
 if &term =~ "xterm-256color" || "screen-256color"
   " 256 colors
@@ -25,4 +25,3 @@ if g:colors_name == "monokai"
   hi Normal ctermbg=none
   hi NonText ctermbg=none
 endif
-

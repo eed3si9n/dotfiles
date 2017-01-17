@@ -7,4 +7,3 @@ set incsearch   " incremental
 set hlsearch    " hightlight the search result
 " double tapping <Esc> un-highlights
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
-

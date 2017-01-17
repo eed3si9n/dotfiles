@@ -1,7 +1,7 @@
 " unite-session {{{
 if neobundle#is_installed('unite-session')
   let g:unite_source_session_options = 'blank,buffers,curdir,folds,help,tabpages,winsize' " options
-  
+
   function! s:getBufferList()
     return filter(range(1,bufnr('$')), 'buflisted(v:val)')
   endfunction
@@ -28,7 +28,7 @@ if neobundle#is_installed('unite-session')
     call s:deleteMatchingBuffers('v-')
   endfunction
 
-  let s:currentDirectory = fnamemodify(getcwd(), ':t') . fnamemodify(getcwd(), ':p:h:gs?/?_?') 
+  let s:currentDirectory = fnamemodify(getcwd(), ':t') . fnamemodify(getcwd(), ':p:h:gs?/?_?')
   function! SaveSess()
     call DeleteBuiltInBuffers()
     exec 'UniteSessionSave ' . s:currentDirectory
@@ -39,8 +39,8 @@ if neobundle#is_installed('unite-session')
     syntax on
   endfunction
 
-  autocmd VimLeave * call SaveSess()
-  autocmd VimEnter * call RestoreSess()
+  " autocmd VimLeave * call SaveSess()
+  " autocmd VimEnter * call RestoreSess()
 endif
 " }}}
 

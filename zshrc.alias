@@ -23,3 +23,6 @@ alias act="activator"
 
 alias qsc="build/quick/bin/scalac -d sandbox"
 alias qs="build/quick/bin/scala -cp sandbox"
+
+alias vim="nvim"
+alias vi="nvim"

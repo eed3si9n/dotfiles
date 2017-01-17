@@ -8,6 +8,11 @@ repo = 'vim-airline/vim-airline'
 repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
-repo = 'sickill/vim-monokai'
-# repo = 'crusoexia/vim-monokai'
+repo = 'crusoexia/vim-monokai'
+# repo = 'sickill/vim-monokai'
 
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
+
+[[plugins]]
+repo = 'derekwyatt/vim-scala'

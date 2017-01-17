@@ -10,7 +10,7 @@ set vb t_vb=
 set noshowmode
 set modelines=0
 set notitle
-
+set encoding=utf-8
 
 " detect file type
 filetype plugin on

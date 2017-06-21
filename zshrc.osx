@@ -1,6 +1,7 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:~/bin:~/dotfiles/bin:$PATH
 export PATH=$CONSCRIPT_HOME/bin:$PATH
+export SHELL=/usr/local/bin/zshexport
 
 export SITE_PACKAGES=/usr/local/lib/python2.7/site-packages/
 
@@ -12,9 +13,9 @@ eval "$(jenv init -)"
 # jenv add `/usr/libexec/java_home -v 1.6`
 # jenv add `/usr/libexec/java_home -v 1.7`
 
-export JAVA_1_6_HOME=`/usr/libexec/java_home -v 1.6`
-export JAVA_1_7_HOME=`/usr/libexec/java_home -v 1.7`
-export JAVA_1_8_HOME=`/usr/libexec/java_home -v 1.8`
+# export JAVA_1_6_HOME=`/usr/libexec/java_home -v 1.6`
+# export JAVA_1_7_HOME=`/usr/libexec/java_home -v 1.7`
+# export JAVA_1_8_HOME=`/usr/libexec/java_home -v 1.8`
 
 # `/usr/libexec/java_home -V` prints out the list of available JDKs
 # setjdk 1.7

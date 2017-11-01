@@ -13,31 +13,6 @@ eval "$(jenv init -)"
 # jenv add `/usr/libexec/java_home -v 1.6`
 # jenv add `/usr/libexec/java_home -v 1.7`
 
-# export JAVA_1_6_HOME=`/usr/libexec/java_home -v 1.6`
-# export JAVA_1_7_HOME=`/usr/libexec/java_home -v 1.7`
-# export JAVA_1_8_HOME=`/usr/libexec/java_home -v 1.8`
-
-# `/usr/libexec/java_home -V` prints out the list of available JDKs
-# setjdk 1.7
-function setjdk() {
-  if [ $# -ne 0 ]; then
-    removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
-    if [ -n "${JAVA_HOME+x}" ]; then
-      removeFromPath $JAVA_HOME/bin
-    fi
-    export JAVA_HOME=`/usr/libexec/java_home -v $@`
-    export PATH=$JAVA_HOME/bin:$PATH
-  fi
-}
-function removeFromPath() {
-  export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
-}
-
-if [ -z "$JDK_SET" ]; then
-  export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
-  export PATH=$JAVA_HOME/bin:$PATH
-fi
-
 export AXIS2_HOME="$HOME/App/axis2-1.6.2"
 export PATH=$AXIS2_HOME/bin$PATH
 
@@ -45,3 +20,11 @@ export PATH=$AXIS2_HOME/bin$PATH
 # https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
 [ `brew list -1 | grep "^rbenv\$"` ] && eval "$(rbenv init -)"
 
+## TeX
+export PATH=/Library/TeX/texbin:$PATH
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# added by travis gem
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh

@@ -26,3 +26,5 @@ alias qs="build/quick/bin/scala -cp sandbox"
 
 alias vim="nvim"
 alias vi="nvim"
+
+alias k="kubectl"

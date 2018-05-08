@@ -9,4 +9,4 @@ export CONSCRIPT_OPTS="-XX:MaxPermSize=512M -Dfile.encoding=UTF-8"
 
 export JAVA_OPTS="-Dfile.encoding=UTF-8"
 
-export SBT_OPTS="-Dfile.encoding=UTF-8 -Xms2048M -Xmx2048M -Xss6M -XX:ReservedCodeCacheSize=256M -XX:MaxPermSize=512M"
+export SBT_OPTS="-Xms2048M -Xmx2048M -Xss2M -XX:MaxPermSize=512M"

@@ -7,3 +7,4 @@ sbt/launchers/
 sbt/cache/
 sbt/repositories
 sbt/0.13/templates
+sbt/0.13/java9*

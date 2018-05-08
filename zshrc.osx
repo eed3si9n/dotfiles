@@ -1,7 +1,7 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:~/bin:~/dotfiles/bin:$PATH
 export PATH=$CONSCRIPT_HOME/bin:$PATH
-export SHELL=/usr/local/bin/zshexport
+export SHELL=/usr/local/bin/zsh
 
 export SITE_PACKAGES=/usr/local/lib/python2.7/site-packages/
 
@@ -28,3 +28,13 @@ eval "$(jenv init -)"
 
 export AXIS2_HOME="$HOME/App/axis2-1.6.2"
 export PATH=$AXIS2_HOME/bin:$PATH
+
+# vscode
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
+
+# jabba
+[ -s "$HOME/.jabba/jabba.sh" ] && source "$HOME/.jabba/jabba.sh"

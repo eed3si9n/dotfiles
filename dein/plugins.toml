@@ -16,3 +16,13 @@ repo = 'altercation/vim-colors-solarized'
 
 [[plugins]]
 repo = 'derekwyatt/vim-scala'
+
+[[plugins]]
+repo = 'eed3si9n/LanguageClient-neovim'
+
+# [[plugins]]
+# repo = 'prabirshrestha/async.vim'
+
+# [[plugins]]
+# repo = 'prabirshrestha/vim-lsp'
+

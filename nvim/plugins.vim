@@ -44,3 +44,33 @@ if has('vim_starting') && dein#check_install()
 endif
 
 " }}}
+
+let g:LanguageClient_autoStart = 1
+
+let g:LanguageClient_serverCommands = {
+    \ 'scala': ['node', expand('~/bin/sbt-server-stdio.js')]
+    \ }
+
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+
+"let g:LanguageClient_diagnosticsEnable = 1
+
+" let g:lsc_server_commands = {'scala': 'node /Users/eed3si9n/bin/sbt-server-stdio.js'}
+
+" au User lsp_setup call lsp#register_server({
+" \ 'name': 'sbt-server',
+" \ 'cmd': { server_info->['node', '/Users/eed3si9n/bin/sbt-server-stdio.js']},
+" \ 'whitelist': ['scala'],
+" \ })
+
+
+" let g:lsp_log_verbose = 1
+" let g:lsp_log_file = expand('~/vim-lsp.log')
+
+" run sbt first
+" au User lsp_setup call lsp#register_server({
+    " \ 'name': 'sbt-scala',
+    " \ 'cmd': {server_info->['node', '/Users/eed3si9n/bin/sbt-server-stdio.js']},
+    " \ 'whitelist': ['scala'],
+    " \ })
+

@@ -26,6 +26,10 @@ private-*.sbt
 Session.vim
 .ensime*
 
+.bloop
+.metals
+/project/metals.sbt
+
 # OS generated files #
 ######################
 .DS_Store

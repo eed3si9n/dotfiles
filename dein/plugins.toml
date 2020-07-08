@@ -18,7 +18,16 @@ repo = 'altercation/vim-colors-solarized'
 repo = 'derekwyatt/vim-scala'
 
 [[plugins]]
-repo = 'eed3si9n/LanguageClient-neovim'
+repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-icons'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-git'
+
+# [[plugins]]
+# repo = 'eed3si9n/LanguageClient-neovim'
 
 # [[plugins]]
 # repo = 'prabirshrestha/async.vim'

@@ -22,3 +22,7 @@ set splitbelow
 
 " display $ at the end of change
 set cpoptions+=$
+
+" use space
+nnoremap <SPACE> <Nop>
+let mapleader=" "

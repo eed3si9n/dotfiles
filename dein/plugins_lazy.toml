@@ -7,8 +7,8 @@ build = './install --all'
 repo = 'junegunn/fzf.vim'
 depends = 'fzf'
 hook_add = '''
-" map <Leader>p to opening files
-nnoremap <silent> <Leader>p :<C-U>:Files<CR>
+" map <Leader>f to opening files
+nnoremap <silent> <Leader>f :<C-U>:Files<CR>
 nnoremap <silent> <Leader>b :<C-U>:Buffers<CR>
 nnoremap <silent> <Leader>/ :<C-U>:Rg<SPACE>
 

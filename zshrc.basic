@@ -1,3 +1,5 @@
+export fpath=($fpath $HOME/work/sbt-modules/sbt/client/completions/)
+
 ## auto comp
 autoload -Uz compinit
 

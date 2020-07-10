@@ -1,13 +1,27 @@
 [[plugins]]
-repo = 'wincent/command-t'
+repo = 'junegunn/fzf'
+merged = 0
+build = './install --all'
 
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
 hook_add = '''
-nnoremap <silent> <Leader>t :<C-U>:CommandT<CR>
-'''
+" map <Leader>p to opening files
+nnoremap <silent> <Leader>p :<C-U>:Files<CR>
+nnoremap <silent> <Leader>b :<C-U>:Buffers<CR>
+nnoremap <silent> <Leader>/ :<C-U>:Rg<SPACE>
 
-## cd ~/.cache/dein/repos/github.com/wincent/command-t/
-## cd ruby/command-t/ext/command-t
-## make clean && ruby extconf.rb && make
+let g:fzf_layout = { 'up': '40%' }
+
+" add layout=reverse to all the commands
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
+command! -bar -bang -nargs=? -complete=buffer Buffers
+    \ call fzf#vim#buffers(<q-args>, { 'placeholder': '{1}', 'options': ['-d', '\t', '--layout=reverse'] })
+command! -bang -nargs=* Rg
+    \ call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>), 1, {'options': ['--layout=reverse', '--info=inline']}, <bang>0)
+'''
 
 [[plugins]]
 repo = 'Shougo/defx.nvim'
@@ -58,10 +72,18 @@ call defx#custom#option('_', {
 '''
 
 # [[plugins]]
-# repo = 'kristijanhusak/defx-icons'
-
-# [[plugins]]
 # repo = 'scrooloose/nerdtree'
 # hook_add = '''
 #    nnoremap <silent> <Leader>e :<C-U>:NERDTreeToggle<CR>
 # '''
+
+# [[plugins]]
+# repo = 'wincent/command-t'
+
+# hook_add = '''
+# nnoremap <silent> <Leader>t :<C-U>:CommandT<CR>
+# '''
+
+## cd ~/.cache/dein/repos/github.com/wincent/command-t/
+## cd ruby/command-t/ext/command-t
+## make clean && ruby extconf.rb && make

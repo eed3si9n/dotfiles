@@ -7,7 +7,12 @@ export SITE_PACKAGES=/usr/local/lib/python2.7/site-packages/
 
 ## ruby
 # https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
-[ `brew list -1 | grep "^rbenv\$"` ] && eval "$(rbenv init -)"
+# [ `brew list -1 | grep "^rbenv\$"` ] && eval "$(rbenv init -)"
+
+rbenv() {
+  eval "$(command rbenv init -)"
+  rbenv "$@"
+}
 
 ## TeX
 export PATH=/Library/TeX/texbin:$PATH

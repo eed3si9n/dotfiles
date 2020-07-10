@@ -1,6 +1,11 @@
 ## auto comp
-autoload -U compinit
-compinit
+autoload -Uz compinit
+
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+
+compinit -C
 
 ## auto load zmv for massive renaming
 autoload -U zmv

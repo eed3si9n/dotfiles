@@ -9,6 +9,14 @@ set cursorline    " highlight the entire line
 " map jj as <Esc>
 imap jj <Esc>
 
+" getting out of terminal
+if has('nvim')
+  " tnoremap jj <C-\><C-n> 
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <M-[> <Esc>
+  tnoremap <C-v><Esc> <Esc>
+endif
+
 " map <C-s> to :update
 noremap <silent> <C-S>      :update<CR>
 vnoremap <silent> <C-S>     <C-C>:update<CR>

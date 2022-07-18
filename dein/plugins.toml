@@ -2,9 +2,6 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'vim-airline/vim-airline'
-
-[[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
@@ -26,6 +23,27 @@ repo = 'kristijanhusak/defx-icons'
 [[plugins]]
 repo = 'kristijanhusak/defx-git'
 
+[[plugins]]
+repo = 'nvim-lua/plenary.nvim'
+
+[[plugins]]
+repo = 'mfussenegger/nvim-dap'
+
+[[plugins]]
+repo = 'scalameta/nvim-metals'
+
+[[plugins]]
+repo = 'hrsh7th/nvim-cmp'
+
+[[plugins]]
+repo = 'hrsh7th/cmp-nvim-lsp'
+
+[[plugins]]
+repo = 'hrsh7th/cmp-vsnip'
+
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip'
+
 # [[plugins]]
 # repo = 'eed3si9n/LanguageClient-neovim'
 
@@ -35,3 +53,10 @@ repo = 'kristijanhusak/defx-git'
 # [[plugins]]
 # repo = 'prabirshrestha/vim-lsp'
 
+# [[plugins]]
+# repo = 'neoclide/coc.nvim'
+# build = 'yarn install --frozen-lockfile'
+
+# [[plugins]]
+# repo = 'scalameta/coc-metals'
+# build = 'yarn install --frozen-lockfile'

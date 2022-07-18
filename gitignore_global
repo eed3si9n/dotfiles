@@ -11,15 +11,19 @@ local.sbt
 private-*.sbt
 .history
 .sbtserver
+_site
 
 # IDE and editors #
 ###################
+
+.bsp
 
 # *.iml
 # .idea
 .idea/workspace.xml
 .idea/tasks.xml
 
+.vscode
 *.iws
 *.sublime-*
 .vim-*

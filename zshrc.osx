@@ -38,6 +38,10 @@ eval "$(jenv init -)"
 export AXIS2_HOME="$HOME/App/axis2-1.6.2"
 export PATH=$AXIS2_HOME/bin:$PATH
 
+# Coursier
+
+export PATH="$PATH:$HOME/Library/Application Support/Coursier/bin"
+
 # vscode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 

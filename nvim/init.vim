@@ -21,3 +21,5 @@ source $HOME/dotfiles/nvim/plugins.vim
 
 " colors
 source $HOME/dotfiles/nvim/colors.vim
+
+:lua require('lsp')

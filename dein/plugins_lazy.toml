@@ -71,6 +71,18 @@ call defx#custom#option('_', {
 \ })
 '''
 
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+hook_post_source = '''
+call airline#parts#define_function('metals', 's:metals_status')
+let g:airline_section_warning (metals)
+
+function! s:metals_status() abort
+  return get(g:, 'metals_status', '')
+endfunction
+'''
+
 # [[plugins]]
 # repo = 'scrooloose/nerdtree'
 # hook_add = '''

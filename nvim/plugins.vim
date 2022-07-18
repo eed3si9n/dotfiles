@@ -45,13 +45,13 @@ endif
 
 " }}}
 
-let g:LanguageClient_autoStart = 1
+" let g:LanguageClient_autoStart = 1
 
-let g:LanguageClient_serverCommands = {
-    \ 'scala': ['node', expand('~/bin/sbt-server-stdio.js')]
-    \ }
+" let g:LanguageClient_serverCommands = {
+"    \ 'scala': ['node', expand('~/bin/sbt-server-stdio.js')]
+"    \ }
 
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+" nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
 
 "let g:LanguageClient_diagnosticsEnable = 1
 

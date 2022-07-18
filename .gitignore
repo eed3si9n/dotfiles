@@ -1,3 +1,5 @@
+asciinema/*
+jgit/*
 vim/*
 sbt/gpg
 zshrc.local

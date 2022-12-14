@@ -14,6 +14,11 @@ autoload -U zmv
 
 ## prompts
 PROMPT="[%m:%~]$ "
+# PROMPT="$ "
+
+if [[ "$TERM_PROGRAM" = "vscode" ]]; then
+  PROMPT="$ "
+fi
 
 ## vi bindings
 bindkey -v

@@ -71,31 +71,8 @@ call defx#custom#option('_', {
 \ })
 '''
 
-[[plugins]]
-repo = 'vim-airline/vim-airline'
-
-hook_post_source = '''
-call airline#parts#define_function('metals', 's:metals_status')
-let g:airline_section_warning (metals)
-
-function! s:metals_status() abort
-  return get(g:, 'metals_status', '')
-endfunction
-'''
-
 # [[plugins]]
 # repo = 'scrooloose/nerdtree'
 # hook_add = '''
 #    nnoremap <silent> <Leader>e :<C-U>:NERDTreeToggle<CR>
 # '''
-
-# [[plugins]]
-# repo = 'wincent/command-t'
-
-# hook_add = '''
-# nnoremap <silent> <Leader>t :<C-U>:CommandT<CR>
-# '''
-
-## cd ~/.cache/dein/repos/github.com/wincent/command-t/
-## cd ruby/command-t/ext/command-t
-## make clean && ruby extconf.rb && make

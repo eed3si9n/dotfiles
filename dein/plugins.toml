@@ -2,20 +2,10 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'vim-airline/vim-airline-themes'
-
-[[plugins]]
-repo = 'crusoexia/vim-monokai'
-# repo = 'sickill/vim-monokai'
-
-[[plugins]]
-repo = 'altercation/vim-colors-solarized'
-
-[[plugins]]
 repo = 'derekwyatt/vim-scala'
 
-[[plugins]]
-repo = 'ryanoasis/vim-devicons'
+# [[plugins]]
+# repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
 repo = 'kristijanhusak/defx-icons'
@@ -49,14 +39,3 @@ repo = 'hrsh7th/vim-vsnip'
 
 # [[plugins]]
 # repo = 'prabirshrestha/async.vim'
-
-# [[plugins]]
-# repo = 'prabirshrestha/vim-lsp'
-
-# [[plugins]]
-# repo = 'neoclide/coc.nvim'
-# build = 'yarn install --frozen-lockfile'
-
-# [[plugins]]
-# repo = 'scalameta/coc-metals'
-# build = 'yarn install --frozen-lockfile'

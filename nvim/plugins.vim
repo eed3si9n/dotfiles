@@ -73,4 +73,3 @@ endif
     " \ 'cmd': {server_info->['node', '/Users/eed3si9n/bin/sbt-server-stdio.js']},
     " \ 'whitelist': ['scala'],
     " \ })
-

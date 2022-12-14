@@ -1,8 +1,10 @@
 set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:airline_theme='powerlineish'
+" let g:airline_powerline_fonts = 1
+" let g:airline_theme='powerlineish'
 
+" colorscheme monokai_sublime
 colorscheme monokai
+
 " colorscheme solarized
 set background=dark
 let g:solarized_termcolors=256

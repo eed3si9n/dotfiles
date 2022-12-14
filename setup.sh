@@ -8,9 +8,11 @@
 
 dir=$HOME/dotfiles                    # dotfiles directory
 olddir=$HOME/dotfiles_old             # old dotfiles backup directory
-FILES=( zshrc vimrc vim gitignore_global tmux.conf )
+FILES=( zshrc vimrc vim gitignore_global tmux.conf local )
 
 ##########
+
+mkdir -p "$dir/local"
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"

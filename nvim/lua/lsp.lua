@@ -1,4 +1,4 @@
--------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------
 -- These are example settings to use with nvim-metals and the nvim built-in
 -- LSP. Be sure to thoroughly read the `:help nvim-metals` docs to get an
 -- idea of what everything does. Again, these are meant to serve as an example,
@@ -43,7 +43,7 @@ end
 --     requires = {
 --       { "hrsh7th/cmp-nvim-lsp" },
 --       { "hrsh7th/cmp-vsnip" },
---       { "hrsh7th/vim-vsnip" },
+  --       { "hrsh7th/vim-vsnip" },
 --     },
 --   })
 --   use({
@@ -72,7 +72,7 @@ map("n", "gws", "<cmd>lua vim.lsp.buf.workspace_symbol()<CR>")
 map("n", "<leader>cl", [[<cmd>lua vim.lsp.codelens.run()<CR>]])
 map("n", "<leader>sh", [[<cmd>lua vim.lsp.buf.signature_help()<CR>]])
 map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
-map("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>")
+map("n", "<leader>m", "<cmd>lua vim.lsp.buf.formatting()<CR>")
 map("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 map("n", "<leader>ws", '<cmd>lua require"metals".hover_worksheet()<CR>')
 map("n", "<leader>aa", [[<cmd>lua vim.diagnostic.setqflist()<CR>]]) -- all workspace diagnostics

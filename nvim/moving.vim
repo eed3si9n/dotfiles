@@ -25,6 +25,8 @@ if has('nvim')
   tnoremap <S-Right> <C-\><C-n> :wincmd l<CR>
 endif
 
+tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
+
 " On Mac Option-arrows are mapped to these
 " noremap <silent> <Esc>B :wincmd h<CR>
 " noremap <silent> <Esc>F :wincmd l<CR>

@@ -11,9 +11,8 @@ return require('packer').startup(function()
   }
 
   use 'tanvirtin/monokai.nvim'
+  use 'sainnhe/sonokai'
   -- use 'patstockwell/vim-monokai-tasty'
   use 'altercation/vim-colors-solarized'
-  use {
-    'nvim-treesitter/nvim-treesitter'
-  }
+  use 'nvim-treesitter/nvim-treesitter'
 end)

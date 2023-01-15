@@ -1,0 +1,4 @@
+theme = "monokai"
+
+[editor]
+true-color = true

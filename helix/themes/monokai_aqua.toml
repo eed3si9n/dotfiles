@@ -1,0 +1,17 @@
+inherits = "monokai"
+
+"namespace" = { fg = "text" }
+
+"type" = { fg = "type", modifiers = ["bold"] }
+
+"keyword.control.import" = { fg = "aqua", modifiers = ["italic"] }
+"keyword.function" = { fg = "aqua", modifiers = ["italic"] }
+"keyword.storage.type" = { fg = "aqua", modifiers = ["italic"] }
+
+"ui.statusline.normal" = { fg = "light-black", bg = "aqua" }
+"ui.statusline.insert" = { fg = "light-black", bg = "green" }
+"ui.statusline.select" = { fg = "light-black", bg = "purple" }
+
+[palette]
+aqua = "#66D9EF"
+type = "#66D9EF"

@@ -1,4 +1,16 @@
-theme = "monokai"
+theme = "monokai_aqua"
 
 [editor]
 true-color = true
+color-modes = true
+bufferline = "always"
+
+[editor.lsp]
+display-messages = true
+
+[keys.normal]
+C-s = ":w"
+
+[keys.insert]
+j = { j = "normal_mode" } # Maps `jj` to exit insert mode
+

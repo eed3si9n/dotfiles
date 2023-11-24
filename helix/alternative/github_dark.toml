@@ -1,4 +1,4 @@
-theme = "monokai_aqua"
+theme = "github_dark"
 
 [editor]
 true-color = true

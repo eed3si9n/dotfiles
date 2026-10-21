@@ -5,6 +5,9 @@ export SHELL=/usr/local/bin/zsh
 
 export SITE_PACKAGES=/usr/local/lib/python2.7/site-packages/
 
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+
 ## ruby
 # https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
 # [ `brew list -1 | grep "^rbenv\$"` ] && eval "$(rbenv init -)"

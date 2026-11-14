@@ -13,6 +13,10 @@ source $HOME/dotfiles/vim/moving.vim
 " searching
 source $HOME/dotfiles/vim/search.vim
 
+" plugin
+" :PlugInstall
+source $HOME/dotfiles/vim/plug.vim
+
 " status line
 " source $HOME/dotfiles/vimrc.statusline
 
@@ -29,4 +33,4 @@ source $HOME/dotfiles/vim/search.vim
 " source $HOME/dotfiles/vimrc.session
 
 " colors
-" source $HOME/dotfiles/nvim/colors.vim
+source $HOME/dotfiles/vim/colors.vim

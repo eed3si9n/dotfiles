@@ -1,33 +1,32 @@
 " basics
-source $HOME/dotfiles/nvim/basic.vim
+source $HOME/dotfiles/vim/basic.vim
 
 " extra
-source $HOME/dotfiles/nvim/extra.vim
+source $HOME/dotfiles/vim/extra.vim
 
 " indentation
-source $HOME/dotfiles/nvim/indent.vim
+source $HOME/dotfiles/vim/indent.vim
 
 " moving
-source $HOME/dotfiles/nvim/moving.vim
+source $HOME/dotfiles/vim/moving.vim
 
 " searching
-source $HOME/dotfiles/nvim/search.vim
+source $HOME/dotfiles/vim/search.vim
 
 " status line
-source $HOME/dotfiles/vimrc.statusline
+" source $HOME/dotfiles/vimrc.statusline
 
 " neobundle
-source $HOME/dotfiles/vimrc.bundle
+" source $HOME/dotfiles/vimrc.bundle
 
 " plugin settings
-source $HOME/dotfiles/vimrc.plugins
+" source $HOME/dotfiles/vimrc.plugins
 
 " unite
-source $HOME/dotfiles/vimrc.unite
+" source $HOME/dotfiles/vimrc.unite
 
 " session
-source $HOME/dotfiles/vimrc.session
+" source $HOME/dotfiles/vimrc.session
 
 " colors
-source $HOME/dotfiles/nvim/colors.vim
-
+" source $HOME/dotfiles/nvim/colors.vim

@@ -9,7 +9,7 @@ homebrew
 jgit/*
 local
 nvm
-nvim/plugin/packer_compiled.lua
+**/plugin/packer_compiled.lua
 sbt/*/dependency/
 sbt/java9*
 sbt/0.13/java9*

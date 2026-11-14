@@ -1,0 +1,2 @@
+[language-server]
+metals = { command = "metals", config = { "isHttpEnabled" = true, metals = { inlayHints = { typeParameters = {enable = true} , hintsInPatternMatch = {enable = true}, defaultBspToBuildTool = true }  } } }

@@ -7,7 +7,7 @@ set autoread
 set noswapfile
 set backspace=indent,eol,start
 set vb t_vb=
-set noshowmode
+" set noshowmode
 set modelines=0
 set notitle
 set encoding=utf-8

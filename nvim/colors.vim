@@ -27,6 +27,6 @@ endif
 syntax on
 
 " if g:colors_name == "monokai"
-  hi Normal ctermbg=none
-  hi NonText ctermbg=none
+hi NonText guibg=NONE ctermbg=none
+hi Normal guibg=NONE ctermbg=NONE
 " endif

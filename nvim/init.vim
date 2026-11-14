@@ -54,10 +54,10 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
-require('monokai').setup()
+-- require('monokai').setup()
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "c", "lua", "rust" },
+  ensure_installed = { "c", "lua", "rust", "scala" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -65,28 +65,20 @@ require'nvim-treesitter.configs'.setup {
   -- Automatically install missing parsers when entering buffer
   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
   auto_install = true,
-
-
   highlight = {
-    -- `false` will disable the whole extension
     enable = true,
-
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
-  },
+  }
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
-parser_config.scala = {
-  install_info = {
-    url = "~/work/tree-sitter-scala",
-    files = {"src/parser.c", "src/scanner.c"},
+-- parser_config.scala = {
+--  install_info = {
+--    url = "~/work/tree-sitter-scala",
+--    files = {"src/parser.c", "src/scanner.c"},
     -- optional entries:
-    branch = "wip/braces2", -- default branch in case of git repo if different from master
-    requires_generate_from_grammar = false, -- if folder contains pre-generated src/parser.c
-  },
-}
+    -- branch = "wip/braces2", -- default branch in case of git repo if different from master
+--    requires_generate_from_grammar = false, -- if folder contains pre-generated src/parser.c
+--  },
+--}
 END

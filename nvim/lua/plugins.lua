@@ -10,7 +10,12 @@ return require('packer').startup(function()
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  use 'tanvirtin/monokai.nvim'
+  use {
+    'nvim-telescope/telescope.nvim', branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  -- use 'tanvirtin/monokai.nvim'
   use 'sainnhe/sonokai'
   -- use 'patstockwell/vim-monokai-tasty'
   use 'altercation/vim-colors-solarized'

@@ -60,7 +60,7 @@ end
 ----------------------------------
 -- global
 vim.opt_global.completeopt = { "menuone", "noinsert", "noselect" }
-vim.opt_global.shortmess:remove("F"):append("c")
+-- vim.opt_global.shortmess:remove("F"):append("c")
 
 -- LSP mappings
 map("n", "gD", "<cmd>lua vim.lsp.buf.definition()<CR>")
@@ -139,6 +139,7 @@ local metals_config = require("metals").bare_config()
 metals_config.settings = {
   showImplicitArguments = true,
   excludedPackages = { "akka.actor.typed.javadsl", "com.github.swagger.akka.javadsl" },
+  serverVersion = "0.11.12+173-cace7e1a-SNAPSHOT",
 }
 
 -- *READ THIS*

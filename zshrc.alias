@@ -15,16 +15,9 @@ alias ll="ls -l"
 
 alias mmv='noglob zmv -W'
 
-alias jdk6='env JAVA_HOME=$JAVA_1_6_HOME PATH=$JAVA_1_6_HOME/bin:"$PATH" JDK_SET="1"'
-alias jdk7='env JAVA_HOME=$JAVA_1_7_HOME PATH=$JAVA_1_7_HOME/bin:"$PATH" JDK_SET="1"'
-alias jdk8='env JAVA_HOME=$JAVA_1_8_HOME PATH=$JAVA_1_8_HOME/bin:"$PATH" JDK_SET="1"'
-
-alias act="activator"
-
 alias qsc="build/quick/bin/scalac -d sandbox"
 alias qs="build/quick/bin/scala -cp sandbox"
 
-alias vim="nvim"
-alias vi="nvim"
+alias vi="vim"
 
 alias k="kubectl"

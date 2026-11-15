@@ -22,4 +22,5 @@ sbt/launchers/
 sbt/repositories
 tree-sitter
 vim/*
+vimrc.local
 zshrc.local

@@ -14,23 +14,14 @@ source $HOME/dotfiles/vim/moving.vim
 source $HOME/dotfiles/vim/search.vim
 
 " plugin
-" :PlugInstall
 source $HOME/dotfiles/vim/plug.vim
 
-" status line
-" source $HOME/dotfiles/vimrc.statusline
-
-" neobundle
-" source $HOME/dotfiles/vimrc.bundle
+if filereadable(expand('~/dotfiles/vimrc.local'))
+  source ~/dotfiles/vimrc.local
+endif
 
 " plugin settings
-" source $HOME/dotfiles/vimrc.plugins
-
-" unite
-" source $HOME/dotfiles/vimrc.unite
-
-" session
-" source $HOME/dotfiles/vimrc.session
+source $HOME/dotfiles/vim/plugin_setting.vim
 
 " colors
 source $HOME/dotfiles/vim/colors.vim

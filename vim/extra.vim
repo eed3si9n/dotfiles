@@ -6,6 +6,8 @@ set list          " display whitespaces
 set listchars=tab:>.,trail:_,extends:>,precedes:< " the whitespace characters
 set cursorline    " highlight the entire line
 
+silent! packadd comment
+
 " map jj as <Esc>
 imap jj <Esc>
 

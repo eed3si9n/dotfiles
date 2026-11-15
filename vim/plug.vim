@@ -1,6 +1,5 @@
 call plug#begin()
 
-Plug 'derekwyatt/vim-scala'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'            " fuzzy file search
 Plug 'tpope/vim-vinegar'

@@ -1,1 +1,0 @@
-/Users/eed3si9n/work/monokai.nvim/lua/monokai.lua

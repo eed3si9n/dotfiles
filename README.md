@@ -1,14 +1,13 @@
 
+### vimrc.local.conf
 
-### font patching
+```vim
+let g:powerline_fonts = 1
+```
+
+### tmux.local.conf
 
 ```
-$ cd ~/work
-$ git clone https://github.com/Lokaltog/powerline-fontpatcher
-$ mkdir -p $HOME/fonts
-$ cd ~/fonts/
-$ sudo cp /System/Library/Fonts/xyz.ttf ~/fonts/
-$ ls
-xyz.ttf
-$ fontforge -script ~/work/powerline-fontpathcer/scripts/powerline-fontpatcher xyz.ttf
+set -g @sep_r "\uE0B0"
+set -g @sep_l "\uE0B2"
 ```
